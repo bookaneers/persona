@@ -1,0 +1,229 @@
+body {
+    /* background-color: lightblue; */
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Organize CSS into separate files for each component */
+.header {
+    font-size: 50px;
+    text-align: center;
+    margin-top: .2em;
+}
+
+.main-tab {
+    padding: .8em;
+    background-color: rgb(6, 9, 173);
+}
+
+.main-tab-button {
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.employee-card {
+    position: relative;
+}
+
+.delete-button {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px
+}
+
+.minus {
+    position: absolute;
+    top: 6px;
+    left: 7px
+}
+
+.form-card {
+    background-color: white;
+    margin-top: 10em;
+    margin-right: 6.5em;
+    margin-left: 6.5em;
+    border-radius: 10px;
+    min-height: 60vh;
+}
+
+h5 {
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+h5:hover {
+    color: rgb(216, 9, 9);
+    transition: 200ms;
+}
+
+.new-nav {
+    min-height: 100vh;
+    background-color: rgba(26, 26, 26, 0.856);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.employee-show {
+    min-height: 77vh;
+    max-height: 77vh;
+    overflow-y: scroll;
+    padding-bottom: 7em;
+}
+
+.employee-card {
+    cursor: pointer;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 100px;
+    max-height: 90px;
+    font-size: large;
+}
+
+.employee-card:hover {
+    background-color: rgba(51, 51, 51, 0.116) !important;
+}
+
+.phone-number {
+    font-size: 15px;
+    color: gray;
+}
+
+.employee-show::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.active-employee-card {
+    min-height: 17vh;
+}
+
+
+.card-placement {
+    margin-top: 7em;
+}
+
+.search {
+    margin-top: 6em;
+    font-size: xx-large;
+}
+
+.active-employee-btn {
+    margin-top: 8em;
+}
+
+.swal-text {
+    margin-bottom: 2em;
+}
+
+.search-input {
+    border-radius: 30px;
+    width: 300px;
+    border-right: none !important;
+}
+
+.inventive-logo {
+    height: 90px;
+}
+
+.search-icon {
+    border-right: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 20px;
+    color: #ced4da;
+}
+
+.fix {
+    position: fixed;
+    bottom: 20px;
+
+}
+
+.company-logo {
+    width: 285px;
+}
+
+.add-employee-card {
+    margin-top: 6em;
+}
+
+@media (max-width: 786px) {
+    .form-card {
+        margin: .5em;
+    }
+
+    .new-nav {
+        min-height: 15vh !important;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    h5 {
+        margin-top: 0 !important;
+    }
+
+    .inventive-logo {
+        display: none;
+    }
+
+    .fix {
+        display: none;
+    }
+
+    .employee-card {
+        min-height: 100px;
+        max-height: 265px;
+
+    }
+
+    .phone-input {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ced4da;
+        padding-bottom: 2em;
+    }
+
+
+}
+
+.selectable {
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 786px) {
+    .new-nav {
+        display: none !important;
+    }
+
+    .phone-img {
+        height: 50px;
+        margin-left: 4em;
+        margin-top: 2em;
+    }
+
+    .computer-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 786px) {
+    .phone-view {
+        display: none !important;
+    }
+
+}
+
+.sort-icon:hover {
+    color: red;
+    transition: 300ms;
+}
