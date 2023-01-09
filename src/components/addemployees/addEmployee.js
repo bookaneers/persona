@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Formik, Field, Form } from 'formik';
 import { addEmployee, fetchEmployees } from "../../store/employees";
 import { useDispatch, useSelector } from "react-redux";
@@ -36,7 +36,7 @@ const AddEmployee = () => {
 
     useEffect(() => {
         dispatch(fetchEmployees())
-    }, [])
+    }, [dispatch])
 
     const employees = useSelector((state) => state.employees)
 
@@ -77,7 +77,7 @@ const AddEmployee = () => {
                     //     values.middleName = null
                     // }
                     let validate = generateRandom(values.employeeId)
-                    if (validate == false) {
+                    if (validate === false) {
                         idError(values.employeeId)
                         return
                     }
